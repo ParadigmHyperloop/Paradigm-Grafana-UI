@@ -1039,12 +1039,12 @@
           "id": 1,
           "legend": {
             "avg": false,
-            "current": false,
-            "max": false,
+            "current": true,
+            "max": true,
             "min": false,
             "show": true,
             "total": false,
-            "values": false
+            "values": true
           },
           "lines": true,
           "linewidth": 2,
@@ -1364,8 +1364,8 @@
     "list": []
   },
   "time": {
-    "from": "2017-01-29T19:13:07.257Z",
-    "to": "2017-01-29T19:13:33.428Z"
+    "from": "now/d",
+    "to": "now/d"
   },
   "timepicker": {
     "refresh_intervals": [
@@ -1395,5 +1395,5 @@
   },
   "timezone": "browser",
   "title": "PSI2",
-  "version": 1
+  "version": 2
 }

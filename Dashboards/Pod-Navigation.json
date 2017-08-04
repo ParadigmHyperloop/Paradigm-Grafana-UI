@@ -48,19 +48,20 @@
           "aliasColors": {},
           "bars": false,
           "datasource": "${DS_LOCAL_INFLUX}",
+          "description": "Metrics for X,Y, and Z position of the pod.",
           "editable": true,
           "error": false,
           "fill": 1,
           "grid": {},
           "id": 3,
           "legend": {
-            "avg": false,
-            "current": false,
-            "max": false,
+            "avg": true,
+            "current": true,
+            "max": true,
             "min": false,
             "show": true,
             "total": false,
-            "values": false
+            "values": true
           },
           "lines": true,
           "linewidth": 2,
@@ -205,11 +206,11 @@
           },
           "yaxes": [
             {
-              "format": "short",
-              "label": null,
+              "format": "lengthm",
+              "label": "Position",
               "logBase": 1,
-              "max": null,
-              "min": null,
+              "max": "1500",
+              "min": "-10",
               "show": true
             },
             {
@@ -226,19 +227,20 @@
           "aliasColors": {},
           "bars": false,
           "datasource": "${DS_LOCAL_INFLUX}",
+          "description": "Metrics for X,Y, and Z velocity of the pod.",
           "editable": true,
           "error": false,
           "fill": 1,
           "grid": {},
           "id": 2,
           "legend": {
-            "avg": false,
-            "current": false,
-            "max": false,
+            "avg": true,
+            "current": true,
+            "max": true,
             "min": false,
             "show": true,
             "total": false,
-            "values": false
+            "values": true
           },
           "lines": true,
           "linewidth": 2,
@@ -383,7 +385,7 @@
           },
           "yaxes": [
             {
-              "format": "short",
+              "format": "velocitymph",
               "label": null,
               "logBase": 1,
               "max": null,
@@ -410,13 +412,13 @@
           "grid": {},
           "id": 1,
           "legend": {
-            "avg": false,
-            "current": false,
-            "max": false,
+            "avg": true,
+            "current": true,
+            "max": true,
             "min": false,
             "show": true,
             "total": false,
-            "values": false
+            "values": true
           },
           "lines": true,
           "linewidth": 2,
@@ -585,17 +587,6 @@
       "showTitle": false,
       "title": "Row",
       "titleSize": "h6"
-    },
-    {
-      "collapse": false,
-      "height": 250,
-      "panels": [],
-      "repeat": null,
-      "repeatIteration": null,
-      "repeatRowId": null,
-      "showTitle": false,
-      "title": "Dashboard Row",
-      "titleSize": "h6"
     }
   ],
   "schemaVersion": 14,
@@ -636,5 +627,5 @@
   },
   "timezone": "browser",
   "title": "Pod Navigation",
-  "version": 1
+  "version": 4
 }

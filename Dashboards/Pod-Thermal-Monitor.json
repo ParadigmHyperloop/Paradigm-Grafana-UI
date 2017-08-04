@@ -95,13 +95,13 @@
           "id": 1,
           "legend": {
             "alignAsTable": false,
-            "avg": false,
-            "current": false,
-            "max": false,
+            "avg": true,
+            "current": true,
+            "max": true,
             "min": false,
             "show": false,
             "total": false,
-            "values": false
+            "values": true
           },
           "lines": false,
           "linewidth": 2,
@@ -945,13 +945,13 @@
           "id": 5,
           "legend": {
             "alignAsTable": false,
-            "avg": false,
-            "current": false,
-            "max": false,
+            "avg": true,
+            "current": true,
+            "max": true,
             "min": false,
             "show": true,
             "total": false,
-            "values": false
+            "values": true
           },
           "lines": true,
           "linewidth": 2,
@@ -1138,8 +1138,8 @@
     "list": []
   },
   "time": {
-    "from": "2017-07-16T17:05:05.942Z",
-    "to": "2017-07-17T17:02:59.767Z"
+    "from": "now/d",
+    "to": "now/d"
   },
   "timepicker": {
     "refresh_intervals": [
@@ -1169,5 +1169,5 @@
   },
   "timezone": "browser",
   "title": "Pod Thermal Monitor",
-  "version": 3
+  "version": 4
 }

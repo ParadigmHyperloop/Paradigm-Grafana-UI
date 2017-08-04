@@ -68,12 +68,12 @@
           "legend": {
             "alignAsTable": false,
             "avg": false,
-            "current": false,
+            "current": true,
             "max": false,
             "min": false,
             "show": true,
             "total": false,
-            "values": false
+            "values": true
           },
           "lines": true,
           "linewidth": 2,
@@ -513,7 +513,7 @@
               "pattern": "/.*/",
               "thresholds": [],
               "type": "number",
-              "unit": "short"
+              "unit": "pressurepsi"
             }
           ],
           "targets": [
@@ -1075,5 +1075,5 @@
   },
   "timezone": "browser",
   "title": "Pod Pressure Monitor",
-  "version": 5
+  "version": 7
 }
