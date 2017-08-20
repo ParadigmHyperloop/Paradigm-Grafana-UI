@@ -1,52 +1,4 @@
 {
-  "__inputs": [
-    {
-      "name": "DS_LOCAL_INFLUX",
-      "label": "Local Influx",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "influxdb",
-      "pluginName": "InfluxDB"
-    }
-  ],
-  "__requires": [
-    {
-      "type": "panel",
-      "id": "alertlist",
-      "name": "Alert List",
-      "version": ""
-    },
-    {
-      "type": "grafana",
-      "id": "grafana",
-      "name": "Grafana",
-      "version": "4.2.0"
-    },
-    {
-      "type": "panel",
-      "id": "graph",
-      "name": "Graph",
-      "version": ""
-    },
-    {
-      "type": "datasource",
-      "id": "influxdb",
-      "name": "InfluxDB",
-      "version": "1.0.0"
-    },
-    {
-      "type": "panel",
-      "id": "singlestat",
-      "name": "Singlestat",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "table",
-      "name": "Table",
-      "version": ""
-    }
-  ],
   "annotations": {
     "list": []
   },
@@ -54,7 +6,7 @@
   "gnetId": null,
   "graphTooltip": 0,
   "hideControls": false,
-  "id": null,
+  "id": 4,
   "links": [],
   "refresh": "1s",
   "rows": [
@@ -71,7 +23,7 @@
             "rgba(147, 239, 68, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "format": "pressurepsi",
@@ -178,7 +130,7 @@
             "rgba(147, 239, 68, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "format": "pressurepsi",
@@ -285,7 +237,7 @@
             "rgba(237, 129, 40, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "format": "lengthm",
@@ -392,7 +344,7 @@
             "rgba(237, 129, 40, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "format": "velocityms",
@@ -499,7 +451,7 @@
             "rgba(49, 172, 43, 0.89)",
             "rgba(246, 62, 62, 0.97)"
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "decimals": null,
           "editable": true,
           "error": false,
@@ -607,7 +559,7 @@
             "rgba(8, 141, 210, 0.89)",
             "rgba(107, 172, 45, 0.97)"
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "decimals": 2,
           "editable": true,
           "error": false,
@@ -672,7 +624,7 @@
                   "type": "fill"
                 }
               ],
-              "measurement": "corner_0",
+              "measurement": "levitation_0",
               "policy": "default",
               "refId": "A",
               "resultFormat": "time_series",
@@ -741,7 +693,7 @@
             "accel_z.mean": "#6ED0E0"
           },
           "bars": false,
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "fill": 3,
@@ -814,7 +766,7 @@
               "groupBy": [
                 {
                   "params": [
-                    "$__interval"
+                    "auto"
                   ],
                   "type": "time"
                 },
@@ -851,7 +803,7 @@
               "groupBy": [
                 {
                   "params": [
-                    "$__interval"
+                    "auto"
                   ],
                   "type": "time"
                 },
@@ -958,7 +910,7 @@
             "accel_y.mean": "#EAB839"
           },
           "bars": false,
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "fill": 3,
@@ -1030,7 +982,7 @@
               "groupBy": [
                 {
                   "params": [
-                    "$__interval"
+                    "auto"
                   ],
                   "type": "time"
                 },
@@ -1066,7 +1018,7 @@
               "groupBy": [
                 {
                   "params": [
-                    "$__interval"
+                    "auto"
                   ],
                   "type": "time"
                 },
@@ -1178,7 +1130,7 @@
           },
           "aliasColors": {},
           "bars": false,
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "fill": 3,
@@ -1250,7 +1202,7 @@
               "groupBy": [
                 {
                   "params": [
-                    "$__interval"
+                    "auto"
                   ],
                   "type": "time"
                 },
@@ -1286,7 +1238,7 @@
               "groupBy": [
                 {
                   "params": [
-                    "$__interval"
+                    "auto"
                   ],
                   "type": "time"
                 },
@@ -1383,7 +1335,7 @@
             "rgba(234, 151, 15, 0.89)",
             "rgba(72, 172, 45, 0.97)"
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "format": "celsius",
@@ -1490,7 +1442,7 @@
             "rgba(234, 151, 15, 0.89)",
             "rgba(72, 172, 45, 0.97)"
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "format": "celsius",
@@ -1597,7 +1549,7 @@
             "rgba(234, 151, 15, 0.89)",
             "rgba(72, 172, 45, 0.97)"
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "format": "celsius",
@@ -1704,7 +1656,7 @@
             "rgba(234, 151, 15, 0.89)",
             "rgba(72, 172, 45, 0.97)"
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "format": "celsius",
@@ -1811,7 +1763,7 @@
             "rgba(234, 151, 15, 0.89)",
             "rgba(72, 172, 45, 0.97)"
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "format": "celsius",
@@ -1918,7 +1870,7 @@
             "rgba(234, 151, 15, 0.89)",
             "rgba(72, 172, 45, 0.97)"
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "format": "celsius",
@@ -2035,7 +1987,7 @@
               "value": "current"
             }
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "filterNull": false,
@@ -2271,7 +2223,7 @@
               "value": "current"
             }
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "filterNull": false,
@@ -2544,7 +2496,7 @@
               "value": "current"
             }
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "filterNull": false,
@@ -2742,7 +2694,7 @@
               "value": "current"
             }
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "filterNull": false,
@@ -3098,7 +3050,7 @@
         {
           "aliasColors": {},
           "bars": false,
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -3390,7 +3342,7 @@
         {
           "aliasColors": {},
           "bars": false,
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "fill": 1,
           "height": "400px",
           "id": 49,
@@ -3422,7 +3374,7 @@
               "groupBy": [
                 {
                   "params": [
-                    "$__interval"
+                    "auto"
                   ],
                   "type": "time"
                 },
@@ -3512,7 +3464,7 @@
               "value": "avg"
             }
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "filterNull": false,
@@ -3779,7 +3731,7 @@
               "groupBy": [
                 {
                   "params": [
-                    "$__interval"
+                    "auto"
                   ],
                   "type": "time"
                 },
@@ -3824,7 +3776,7 @@
             "rgba(237, 129, 40, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "format": "pressurepsi",
           "gauge": {
             "maxValue": 200,
@@ -3875,7 +3827,7 @@
               "groupBy": [
                 {
                   "params": [
-                    "$__interval"
+                    "auto"
                   ],
                   "type": "time"
                 },
@@ -3929,7 +3881,7 @@
             "rgba(237, 129, 40, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "format": "pressurepsi",
           "gauge": {
             "maxValue": 1950,
@@ -3980,7 +3932,7 @@
               "groupBy": [
                 {
                   "params": [
-                    "$__interval"
+                    "auto"
                   ],
                   "type": "time"
                 },
@@ -4073,7 +4025,7 @@
           },
           "aliasColors": {},
           "bars": true,
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -4469,7 +4421,7 @@
           },
           "aliasColors": {},
           "bars": false,
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -4645,7 +4597,7 @@
               "value": "max"
             }
           ],
-          "datasource": "${DS_LOCAL_INFLUX}",
+          "datasource": "Local Influx",
           "editable": true,
           "error": false,
           "filterNull": false,
@@ -5081,7 +5033,7 @@
     "list": []
   },
   "time": {
-    "from": "now-30m",
+    "from": "now-5m",
     "to": "now"
   },
   "timepicker": {
@@ -5112,5 +5064,5 @@
   },
   "timezone": "browser",
   "title": "Pod Vitals",
-  "version": 20
+  "version": 1
 }
