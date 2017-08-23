@@ -1,4 +1,52 @@
 {
+  "__inputs": [
+    {
+      "name": "DS_LOCAL_INFLUX",
+      "label": "Local Influx",
+      "description": "",
+      "type": "datasource",
+      "pluginId": "influxdb",
+      "pluginName": "InfluxDB"
+    }
+  ],
+  "__requires": [
+    {
+      "type": "panel",
+      "id": "alertlist",
+      "name": "Alert List",
+      "version": ""
+    },
+    {
+      "type": "grafana",
+      "id": "grafana",
+      "name": "Grafana",
+      "version": "4.2.0"
+    },
+    {
+      "type": "panel",
+      "id": "graph",
+      "name": "Graph",
+      "version": ""
+    },
+    {
+      "type": "datasource",
+      "id": "influxdb",
+      "name": "InfluxDB",
+      "version": "1.0.0"
+    },
+    {
+      "type": "panel",
+      "id": "singlestat",
+      "name": "Singlestat",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "table",
+      "name": "Table",
+      "version": ""
+    }
+  ],
   "annotations": {
     "list": []
   },
@@ -6,7 +54,7 @@
   "gnetId": null,
   "graphTooltip": 0,
   "hideControls": false,
-  "id": 4,
+  "id": null,
   "links": [],
   "refresh": "1s",
   "rows": [
@@ -23,7 +71,7 @@
             "rgba(147, 239, 68, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "format": "pressurepsi",
@@ -126,11 +174,11 @@
           "colorBackground": true,
           "colorValue": false,
           "colors": [
-            "rgba(45, 141, 172, 0.97)",
+            "rgba(100, 208, 41, 0.97)",
             "rgba(147, 239, 68, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "format": "pressurepsi",
@@ -237,7 +285,7 @@
             "rgba(237, 129, 40, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "format": "lengthm",
@@ -344,7 +392,7 @@
             "rgba(237, 129, 40, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "format": "velocityms",
@@ -451,7 +499,7 @@
             "rgba(49, 172, 43, 0.89)",
             "rgba(246, 62, 62, 0.97)"
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "decimals": null,
           "editable": true,
           "error": false,
@@ -559,7 +607,7 @@
             "rgba(8, 141, 210, 0.89)",
             "rgba(107, 172, 45, 0.97)"
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "decimals": 2,
           "editable": true,
           "error": false,
@@ -667,7 +715,7 @@
             "rgba(8, 141, 210, 0.89)",
             "rgba(107, 172, 45, 0.97)"
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "decimals": 2,
           "editable": true,
           "error": false,
@@ -791,7 +839,7 @@
       "titleSize": "h6"
     },
     {
-      "collapse": true,
+      "collapse": false,
       "height": 244,
       "panels": [
         {
@@ -801,7 +849,7 @@
             "accel_z.mean": "#6ED0E0"
           },
           "bars": false,
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "fill": 3,
@@ -1057,7 +1105,7 @@
             "accel_y.mean": "#EAB839"
           },
           "bars": false,
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "fill": 3,
@@ -1317,7 +1365,7 @@
           },
           "aliasColors": {},
           "bars": false,
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "fill": 3,
@@ -1523,7 +1571,7 @@
             "rgba(234, 151, 15, 0.89)",
             "rgba(72, 172, 45, 0.97)"
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "format": "celsius",
@@ -1630,7 +1678,7 @@
             "rgba(234, 151, 15, 0.89)",
             "rgba(72, 172, 45, 0.97)"
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "format": "celsius",
@@ -1737,7 +1785,7 @@
             "rgba(234, 151, 15, 0.89)",
             "rgba(72, 172, 45, 0.97)"
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "format": "celsius",
@@ -1844,7 +1892,7 @@
             "rgba(234, 151, 15, 0.89)",
             "rgba(72, 172, 45, 0.97)"
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "format": "celsius",
@@ -1951,7 +1999,7 @@
             "rgba(234, 151, 15, 0.89)",
             "rgba(72, 172, 45, 0.97)"
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "format": "celsius",
@@ -2058,7 +2106,7 @@
             "rgba(234, 151, 15, 0.89)",
             "rgba(72, 172, 45, 0.97)"
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "format": "celsius",
@@ -2165,7 +2213,7 @@
       "titleSize": "h6"
     },
     {
-      "collapse": true,
+      "collapse": false,
       "height": "350px",
       "panels": [
         {
@@ -2175,7 +2223,7 @@
               "value": "current"
             }
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "filterNull": false,
@@ -2411,7 +2459,7 @@
               "value": "current"
             }
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "filterNull": false,
@@ -2684,7 +2732,7 @@
               "value": "current"
             }
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "filterNull": false,
@@ -2882,7 +2930,7 @@
               "value": "current"
             }
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "filterNull": false,
@@ -3232,13 +3280,207 @@
       "titleSize": "h6"
     },
     {
-      "collapse": true,
+      "collapse": false,
       "height": 172,
       "panels": [
         {
+          "alert": {
+            "conditions": [
+              {
+                "evaluator": {
+                  "params": [
+                    135
+                  ],
+                  "type": "gt"
+                },
+                "operator": {
+                  "type": "and"
+                },
+                "query": {
+                  "params": [
+                    "A",
+                    "now-1m",
+                    "now-1s"
+                  ]
+                },
+                "reducer": {
+                  "params": [],
+                  "type": "last"
+                },
+                "type": "query"
+              },
+              {
+                "evaluator": {
+                  "params": [
+                    135
+                  ],
+                  "type": "gt"
+                },
+                "operator": {
+                  "type": "or"
+                },
+                "query": {
+                  "params": [
+                    "B",
+                    "now-1m",
+                    "now-1s"
+                  ]
+                },
+                "reducer": {
+                  "params": [],
+                  "type": "last"
+                },
+                "type": "query"
+              },
+              {
+                "evaluator": {
+                  "params": [
+                    135
+                  ],
+                  "type": "gt"
+                },
+                "operator": {
+                  "type": "or"
+                },
+                "query": {
+                  "params": [
+                    "H",
+                    "now-1m",
+                    "now-1s"
+                  ]
+                },
+                "reducer": {
+                  "params": [],
+                  "type": "last"
+                },
+                "type": "query"
+              },
+              {
+                "evaluator": {
+                  "params": [
+                    135
+                  ],
+                  "type": "gt"
+                },
+                "operator": {
+                  "type": "or"
+                },
+                "query": {
+                  "params": [
+                    "I",
+                    "now-1m",
+                    "now-1s"
+                  ]
+                },
+                "reducer": {
+                  "params": [],
+                  "type": "last"
+                },
+                "type": "query"
+              },
+              {
+                "evaluator": {
+                  "params": [
+                    135
+                  ],
+                  "type": "gt"
+                },
+                "operator": {
+                  "type": "or"
+                },
+                "query": {
+                  "params": [
+                    "J",
+                    "now-1m",
+                    "now-1s"
+                  ]
+                },
+                "reducer": {
+                  "params": [],
+                  "type": "last"
+                },
+                "type": "query"
+              },
+              {
+                "evaluator": {
+                  "params": [
+                    135
+                  ],
+                  "type": "gt"
+                },
+                "operator": {
+                  "type": "or"
+                },
+                "query": {
+                  "params": [
+                    "K",
+                    "now-1m",
+                    "now-1s"
+                  ]
+                },
+                "reducer": {
+                  "params": [],
+                  "type": "last"
+                },
+                "type": "query"
+              },
+              {
+                "evaluator": {
+                  "params": [
+                    135
+                  ],
+                  "type": "gt"
+                },
+                "operator": {
+                  "type": "or"
+                },
+                "query": {
+                  "params": [
+                    "C",
+                    "now-1m",
+                    "now-1s"
+                  ]
+                },
+                "reducer": {
+                  "params": [],
+                  "type": "last"
+                },
+                "type": "query"
+              },
+              {
+                "evaluator": {
+                  "params": [
+                    135
+                  ],
+                  "type": "gt"
+                },
+                "operator": {
+                  "type": "or"
+                },
+                "query": {
+                  "params": [
+                    "D",
+                    "now-1m",
+                    "now-1s"
+                  ]
+                },
+                "reducer": {
+                  "params": [],
+                  "type": "last"
+                },
+                "type": "query"
+              }
+            ],
+            "executionErrorState": "alerting",
+            "frequency": "60s",
+            "handler": 1,
+            "name": "Low Pressure System alert",
+            "noDataState": "no_data",
+            "notifications": []
+          },
           "aliasColors": {},
           "bars": false,
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -3280,7 +3522,7 @@
                 },
                 {
                   "params": [
-                    "null"
+                    "linear"
                   ],
                   "type": "fill"
                 }
@@ -3317,7 +3559,7 @@
                 },
                 {
                   "params": [
-                    "null"
+                    "linear"
                   ],
                   "type": "fill"
                 }
@@ -3354,7 +3596,7 @@
                 },
                 {
                   "params": [
-                    "null"
+                    "linear"
                   ],
                   "type": "fill"
                 }
@@ -3391,7 +3633,7 @@
                 },
                 {
                   "params": [
-                    "null"
+                    "linear"
                   ],
                   "type": "fill"
                 }
@@ -3428,7 +3670,7 @@
                 },
                 {
                   "params": [
-                    "null"
+                    "linear"
                   ],
                   "type": "fill"
                 }
@@ -3465,7 +3707,7 @@
                 },
                 {
                   "params": [
-                    "null"
+                    "linear"
                   ],
                   "type": "fill"
                 }
@@ -3502,7 +3744,7 @@
                 },
                 {
                   "params": [
-                    "null"
+                    "linear"
                   ],
                   "type": "fill"
                 }
@@ -3539,7 +3781,7 @@
                 },
                 {
                   "params": [
-                    "null"
+                    "linear"
                   ],
                   "type": "fill"
                 }
@@ -3565,7 +3807,15 @@
               "tags": []
             }
           ],
-          "thresholds": [],
+          "thresholds": [
+            {
+              "colorMode": "critical",
+              "fill": true,
+              "line": true,
+              "op": "gt",
+              "value": 135
+            }
+          ],
           "timeFrom": null,
           "timeShift": null,
           "title": "Low Pressure System",
@@ -3602,9 +3852,65 @@
           ]
         },
         {
+          "alert": {
+            "conditions": [
+              {
+                "evaluator": {
+                  "params": [
+                    1275
+                  ],
+                  "type": "gt"
+                },
+                "operator": {
+                  "type": "and"
+                },
+                "query": {
+                  "params": [
+                    "A",
+                    "now-5m",
+                    "now-1s"
+                  ]
+                },
+                "reducer": {
+                  "params": [],
+                  "type": "last"
+                },
+                "type": "query"
+              },
+              {
+                "evaluator": {
+                  "params": [
+                    1499
+                  ],
+                  "type": "gt"
+                },
+                "operator": {
+                  "type": "or"
+                },
+                "query": {
+                  "params": [
+                    "A",
+                    "now-5m",
+                    "now-1s"
+                  ]
+                },
+                "reducer": {
+                  "params": [],
+                  "type": "last"
+                },
+                "type": "query"
+              }
+            ],
+            "executionErrorState": "alerting",
+            "frequency": "60s",
+            "handler": 1,
+            "name": "High Pressure System alert",
+            "noDataState": "no_data",
+            "notifications": []
+          },
           "aliasColors": {},
           "bars": false,
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "fill": 1,
           "height": "400px",
           "id": 49,
@@ -3612,7 +3918,7 @@
             "avg": true,
             "current": true,
             "max": true,
-            "min": false,
+            "min": true,
             "show": true,
             "total": false,
             "values": true
@@ -3642,7 +3948,7 @@
                 },
                 {
                   "params": [
-                    "null"
+                    "linear"
                   ],
                   "type": "fill"
                 }
@@ -3668,7 +3974,15 @@
               "tags": []
             }
           ],
-          "thresholds": [],
+          "thresholds": [
+            {
+              "colorMode": "critical",
+              "fill": true,
+              "line": true,
+              "op": "gt",
+              "value": 1275
+            }
+          ],
           "timeFrom": null,
           "timeShift": null,
           "title": "High Pressure System",
@@ -3704,9 +4018,111 @@
           ]
         },
         {
+          "alert": {
+            "conditions": [
+              {
+                "evaluator": {
+                  "params": [
+                    100
+                  ],
+                  "type": "lt"
+                },
+                "operator": {
+                  "type": "and"
+                },
+                "query": {
+                  "params": [
+                    "A",
+                    "now-5m",
+                    "now-1s"
+                  ]
+                },
+                "reducer": {
+                  "params": [],
+                  "type": "last"
+                },
+                "type": "query"
+              },
+              {
+                "evaluator": {
+                  "params": [
+                    100
+                  ],
+                  "type": "lt"
+                },
+                "operator": {
+                  "type": "or"
+                },
+                "query": {
+                  "params": [
+                    "B",
+                    "now-5m",
+                    "now-1s"
+                  ]
+                },
+                "reducer": {
+                  "params": [],
+                  "type": "last"
+                },
+                "type": "query"
+              },
+              {
+                "evaluator": {
+                  "params": [
+                    100
+                  ],
+                  "type": "lt"
+                },
+                "operator": {
+                  "type": "or"
+                },
+                "query": {
+                  "params": [
+                    "C",
+                    "now-5m",
+                    "now-1s"
+                  ]
+                },
+                "reducer": {
+                  "params": [],
+                  "type": "last"
+                },
+                "type": "query"
+              },
+              {
+                "evaluator": {
+                  "params": [
+                    100
+                  ],
+                  "type": "lt"
+                },
+                "operator": {
+                  "type": "or"
+                },
+                "query": {
+                  "params": [
+                    "D",
+                    "now-5m",
+                    "now-1s"
+                  ]
+                },
+                "reducer": {
+                  "params": [],
+                  "type": "last"
+                },
+                "type": "query"
+              }
+            ],
+            "executionErrorState": "alerting",
+            "frequency": "1s",
+            "handler": 1,
+            "name": "Pusher Plate Distances alert",
+            "noDataState": "no_data",
+            "notifications": []
+          },
           "aliasColors": {},
           "bars": false,
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "fill": 1,
           "height": "400px",
           "id": 51,
@@ -3744,7 +4160,7 @@
                 },
                 {
                   "params": [
-                    "null"
+                    "linear"
                   ],
                   "type": "fill"
                 }
@@ -3781,7 +4197,7 @@
                 },
                 {
                   "params": [
-                    "null"
+                    "linear"
                   ],
                   "type": "fill"
                 }
@@ -3818,7 +4234,7 @@
                 },
                 {
                   "params": [
-                    "null"
+                    "linear"
                   ],
                   "type": "fill"
                 }
@@ -3855,7 +4271,7 @@
                 },
                 {
                   "params": [
-                    "null"
+                    "linear"
                   ],
                   "type": "fill"
                 }
@@ -3881,7 +4297,15 @@
               "tags": []
             }
           ],
-          "thresholds": [],
+          "thresholds": [
+            {
+              "colorMode": "critical",
+              "fill": true,
+              "line": true,
+              "op": "lt",
+              "value": 100
+            }
+          ],
           "timeFrom": null,
           "timeShift": null,
           "title": "Pusher Plate Distances",
@@ -3902,7 +4326,7 @@
               "format": "lengthmm",
               "label": null,
               "logBase": 1,
-              "max": "2000",
+              "max": "300",
               "min": null,
               "show": true
             },
@@ -3939,7 +4363,7 @@
               "value": "avg"
             }
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "filterNull": false,
@@ -4245,16 +4669,16 @@
         {
           "cacheTimeout": null,
           "colorBackground": false,
-          "colorValue": false,
+          "colorValue": true,
           "colors": [
             "rgba(50, 172, 45, 0.97)",
             "rgba(237, 129, 40, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "format": "pressurepsi",
           "gauge": {
-            "maxValue": 200,
+            "maxValue": 150,
             "minValue": 0,
             "show": true,
             "thresholdLabels": true,
@@ -4308,7 +4732,7 @@
                 },
                 {
                   "params": [
-                    "null"
+                    "linear"
                   ],
                   "type": "fill"
                 }
@@ -4334,7 +4758,7 @@
               "tags": []
             }
           ],
-          "thresholds": "150,175",
+          "thresholds": "125,135",
           "title": "LP System Pressure",
           "type": "singlestat",
           "valueFontSize": "80%",
@@ -4350,16 +4774,16 @@
         {
           "cacheTimeout": null,
           "colorBackground": false,
-          "colorValue": false,
+          "colorValue": true,
           "colors": [
             "rgba(49, 212, 42, 0.97)",
             "rgba(237, 129, 40, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "format": "pressurepsi",
           "gauge": {
-            "maxValue": 1950,
+            "maxValue": 1750,
             "minValue": 0,
             "show": true,
             "thresholdLabels": true,
@@ -4439,7 +4863,7 @@
               "tags": []
             }
           ],
-          "thresholds": "1400, 1800",
+          "thresholds": "1250, 1500",
           "title": "HP System Pressure",
           "type": "singlestat",
           "valueFontSize": "80%",
@@ -4539,7 +4963,7 @@
           },
           "aliasColors": {},
           "bars": true,
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -4565,7 +4989,7 @@
           "points": false,
           "renderer": "flot",
           "seriesOverrides": [],
-          "span": 4,
+          "span": 6,
           "stack": false,
           "steppedLine": false,
           "targets": [
@@ -5011,13 +5435,13 @@
           },
           "aliasColors": {},
           "bars": false,
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "fill": 1,
           "grid": {},
           "height": "415px",
-          "id": 47,
+          "id": 52,
           "legend": {
             "alignAsTable": false,
             "avg": true,
@@ -5037,7 +5461,7 @@
           "points": false,
           "renderer": "flot",
           "seriesOverrides": [],
-          "span": 4,
+          "span": 6,
           "stack": false,
           "steppedLine": false,
           "targets": [
@@ -5053,7 +5477,7 @@
                 },
                 {
                   "params": [
-                    "null"
+                    "linear"
                   ],
                   "type": "fill"
                 }
@@ -5090,7 +5514,7 @@
                 },
                 {
                   "params": [
-                    "null"
+                    "linear"
                   ],
                   "type": "fill"
                 }
@@ -5187,7 +5611,7 @@
               "value": "max"
             }
           ],
-          "datasource": "Local Influx",
+          "datasource": "${DS_LOCAL_INFLUX}",
           "editable": true,
           "error": false,
           "filterNull": false,
@@ -5653,6 +6077,6 @@
     ]
   },
   "timezone": "browser",
-  "title": "Pod Vitals",
-  "version": 4
+  "title": "Pod Vitals CW 2017",
+  "version": 2
 }
